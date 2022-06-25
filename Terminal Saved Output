@@ -1,0 +1,119 @@
+Last login: Fri Jun 24 10:05:43 on ttys000
+➜  ~ git:(master) ✗ ls                                                    
+Desktop                      Pictures
+Documents                    Public
+Downloads                    app.js
+Library                      ga_seir
+Movies                       git@github.com:Jacksonmchugh
+Music
+➜  ~ git:(master) ✗ git@github.com:Jacksonmchugh
+➜  git@github.com:Jacksonmchugh git:(master) ✗ git clone git@github.com:Jacksonmchugh/u1_hw_star_wars.git
+Cloning into 'u1_hw_star_wars'...
+remote: Enumerating objects: 67, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 67 (delta 9), reused 6 (delta 6), pack-reused 54
+Receiving objects: 100% (67/67), 16.81 KiB | 717.00 KiB/s, done.
+Resolving deltas: 100% (31/31), done.
+➜  git@github.com:Jacksonmchugh git:(master) ✗ code .
+➜  git@github.com:Jacksonmchugh git:(master) ✗ mkdir star_wars
+➜  git@github.com:Jacksonmchugh git:(master) ✗ ls
+app.js                  u1_hw_star_wars         u1_lesson_intro_DOM.git
+index.html              u1_lab_dots             u1_lesson_js_events
+star_wars               u1_lab_fake_resume.git
+➜  git@github.com:Jacksonmchugh git:(master) ✗ mv star_wars u1_hw_star_wars
+➜  git@github.com:Jacksonmchugh git:(master) ✗ ls
+app.js                  u1_lab_dots             u1_lesson_js_events
+index.html              u1_lab_fake_resume.git
+u1_hw_star_wars         u1_lesson_intro_DOM.git
+➜  git@github.com:Jacksonmchugh git:(master) ✗ u1_hw_star_wars
+➜  u1_hw_star_wars git:(main) ls
+README.md    act2.sh      index.html   star_wars
+act1.sh      act3.sh      solution.txt
+➜  u1_hw_star_wars git:(main) cd
+➜  ~ git:(master) ✗ ls
+Desktop                      Pictures
+Documents                    Public
+Downloads                    app.js
+Library                      ga_seir
+Movies                       git@github.com:Jacksonmchugh
+Music
+➜  ~ git:(master) ✗ documents
+➜  documents git:(master) ✗ ls
+➜  documents git:(master) ✗ cd ..
+➜  ~ git:(master) ✗ ls
+Desktop                      Pictures
+Documents                    Public
+Downloads                    app.js
+Library                      ga_seir
+Movies                       git@github.com:Jacksonmchugh
+Music
+➜  ~ git:(master) ✗ git@github.com:Jacksonmchugh
+➜  git@github.com:Jacksonmchugh git:(master) ✗ ls
+app.js                  u1_lab_dots             u1_lesson_js_events
+index.html              u1_lab_fake_resume.git
+u1_hw_star_wars         u1_lesson_intro_DOM.git
+➜  git@github.com:Jacksonmchugh git:(master) ✗ rm u1_lesson_intro_dom.git
+➜  git@github.com:Jacksonmchugh git:(master) ✗ ls
+app.js                 u1_hw_star_wars        u1_lab_fake_resume.git
+index.html             u1_lab_dots            u1_lesson_js_events
+➜  git@github.com:Jacksonmchugh git:(master) ✗ u1_hw_star_wars
+➜  u1_hw_star_wars git:(main) ls
+README.md    act2.sh      index.html   star_wars
+act1.sh      act3.sh      solution.txt
+➜  u1_hw_star_wars git:(main) mv star_wars act1.sh
+mv: rename star_wars to act1.sh: Not a directory
+➜  u1_hw_star_wars git:(main) ls
+README.md    act2.sh      index.html   star_wars
+act1.sh      act3.sh      solution.txt
+➜  u1_hw_star_wars git:(main) star_wars
+➜  star_wars git:(main) mkdir empire rebellion
+➜  star_wars git:(main) empire
+➜  empire git:(main) touch darth_vader.txt
+➜  empire git:(main) ✗ echo "....Heavy breathing..."
+....Heavy breathing...
+➜  empire git:(main) ✗ echo darth_vader.txt echo "....Heavy breathing..."
+darth_vader.txt echo ....Heavy breathing...
+➜  empire git:(main) ✗ ls
+darth_vader.txt
+➜  empire git:(main) ✗ darth_vader.txt
+zsh: command not found: darth_vader.txt
+➜  empire git:(main) ✗ echo darth_vader.txt "...Heavy breathing..."
+darth_vader.txt ...Heavy breathing...
+➜  empire git:(main) ✗ echo "....Heavy breathing...." >> darth_vader.txt
+➜  empire git:(main) ✗ touch  emperor_palpatine.txt
+➜  empire git:(main) ✗ mkdir death_star
+➜  empire git:(main) ✗ mv darth_vader.txt death_star
+➜  empire git:(main) ✗ git commit -m "act1 done."
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  empire git:(main) ✗ git add  
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  empire git:(main) ✗ git add . 
+➜  empire git:(main) ✗ git commit -m "act1 done"
+[main 927dff1] act1 done
+ 2 files changed, 1 insertion(+)
+ create mode 100644 star_wars/empire/death_star/darth_vader.txt
+ create mode 100644 star_wars/empire/emperor_palpatine.txt
+➜  empire git:(main) git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+➜  empire git:(main) 
